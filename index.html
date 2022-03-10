@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <script src="index.js"></script>
+    <title>Daniel Brechner</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1 class="myname">Daniel Brechner</h1>
+        <nav class="topnav">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- About Me-->
+    <main>
+        <section id="aboutMe">
+            <div>
+                <article>
+
+                    <h2>About Me</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequatur accusamus non
+                        corporis,
+                        corrupti nam at molestiae voluptatum quasi reiciendis esse architecto voluptate incidunt ad
+                        officiis
+                        vero. Ex eius aliquid natus iure, neque perferendis? Perferendis, dicta vitae et impedit,
+                        repellat
+                        totam dolor harum sint possimus cupiditate, nobis quod qui blanditiis.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience-->
+        <section id="experience">
+            <h2>Experience</h2>
+            <button onclick="btn()">Skills</button>
+            <div id="skills">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>GIT</li>
+                    <li>GitHub</li>
+                    <li>Wordpress</li>
+                </ul>
+            </div>
+            <br>
+
+            <button onclick="btn2()">Education</button>
+            <div id="education">
+                <ul>
+                    <li>Code Louisville | Front-End Web Development Certificate of Completion (pending) 2022</li>
+                    <li>Univerity of Louisville | B.S. Geography/Geosciences 2011</li>
+                    <li>Jefferson Community and Technical College | A.S. 2008</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Me-->
+        <aside>
+            <h2>Contact me</h2>
+            <form id="conatctForm">
+                <div id="formInfo"></div>
+                <div>
+                    <label for="fullName">Full Name</label>
+                </div>
+                <div>
+                    <input id="fullName" type="text" />
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                </div>
+                <div>
+                    <input id="email" type="email" />
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                </div>
+                <div>
+                    <select id="subject">
+                        <option>Job Offer</option>
+                        <option>Personal Message</option>
+                        <option>Complaint</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="msg">Message</label>
+                </div>
+                <div>
+                    <textarea for="msg" rows="4"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Send Mail">
+                </div>
+            </form>
+
+            </aisde>
+
+
+    </main>
+
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <a href="mailto:brechner.daniel@gmail.com">brechner.daniel@gmail.com</a> <br>
+        &copy; Daniel Brechner 2022
+    </footer>
+
+</body>
+
+
+</html>
