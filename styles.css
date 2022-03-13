@@ -1,0 +1,120 @@
+*,:after,:before{box-sizing:border-box}
+
+body{
+  margin: 0;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 100px;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container div{
+  padding: 10px;
+  border: 1px solid black;
+}
+.header{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.aboutme{
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.footer{
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+
+body{
+    background-color: gainsboro;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 8x;
+}
+section {
+  text-align: center;
+  background-color: gainsboro;
+  padding: 3px;
+  
+}
+article{
+  padding: 3px;
+  margin: 10px;
+  
+}
+
+#contact{
+  text-align: center;
+
+  
+}
+form {
+    display: block;
+    background: white;
+    margin: 0;
+    /* padding: 30px; */
+    border-style: hidden;
+  }
+  
+
+  
+
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+    width: 100%;
+    background: rgb(144, 175, 233);
+    padding: 8px;
+    
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+    /*flex-grow: 1;
+    flex-basis: 0; */
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover { background: #b5bdc7; }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+  /* Media Queries */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+   
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: rgb(144, 175, 233);
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+
