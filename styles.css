@@ -8,14 +8,15 @@ body{
 section {
   text-align: center;
   background-color: gainsboro;
-  padding: 3px;
+  /* padding: 3px; */
+}
+
+
+fooconter{
   
 }
-article{
-  padding: 3px;
-  margin: 10px;
-  
-}
+
+/* Grid setup */
 .container{
   width: 100vw;
   height: 100vh;
@@ -28,7 +29,7 @@ article{
   box-sizing: border-box;
 }
 .container div{
-  padding: 10px;
+  padding-top: 10px;
   border: 1px solid black;
 }
 
@@ -38,17 +39,21 @@ article{
 }
 ul{
   list-style: none;
+  padding: 10px;
+}
+li{
+  list-style: none;
 }
 #contact{
   text-align: center;
-
+padding-top: 8px;
+padding-bottom: 8px;
   
 }
 form {
     display: block;
     background: white;
-    margin: 0;
-    /* padding: 30px; */
+    padding: 8px;
     border-style: hidden;
   }
   
