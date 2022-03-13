@@ -1,42 +1,6 @@
 *,:after,:before{box-sizing:border-box}
 
 body{
-  margin: 0;
-}
-
-.container{
-  width: 100vw;
-  height: 100vh;
-  font-size: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 1fr 1fr 100px;
-  gap: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-.container div{
-  padding: 10px;
-  border: 1px solid black;
-}
-.header{
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-.aboutme{
-  grid-row-start: 2;
-  grid-row-end: span 2;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.footer{
-  grid-column-start: 1;
-  grid-column-end: span 3;
-}
-
-
-body{
     background-color: gainsboro;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 8x;
@@ -52,7 +16,29 @@ article{
   margin: 10px;
   
 }
+.container{
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 100px;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container div{
+  padding: 10px;
+  border: 1px solid black;
+}
 
+#education{
+  text-align: center;
+ 
+}
+ul{
+  list-style: none;
+}
 #contact{
   text-align: center;
 
@@ -81,8 +67,6 @@ form {
   /* (B) HORIZONTAL MENU ITEMS */
   #hamitems { display: flex; }
   #hamitems a {
-    /*flex-grow: 1;
-    flex-basis: 0; */
     padding: 10px;
     color: white;
     text-decoration: none;
@@ -92,6 +76,12 @@ form {
   
   /* (C) HIDE HAMBURGER */
   #hamnav label, #hamburger { display: none; }
+
+  img{
+   padding: 8px;
+    height: 100px;
+    
+  }
 
   /* Media Queries */
 @media screen and (max-width: 768px){
