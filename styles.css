@@ -1,42 +1,33 @@
 *,:after,:before{box-sizing:border-box}
-
+html, body {
+  height: 100%;
+}
 body{
     background-color: gainsboro;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 8x;
+    
+}
+h1{
+  letter-spacing: 2px;
+  font-weight: bold;
+  
 }
 section {
   text-align: center;
   background-color: gainsboro;
-  /* padding: 3px; */
-}
-
-
-fooconter{
-  
-}
-
-/* Grid setup */
-.container{
-  width: 100vw;
-  height: 100vh;
-  font-size: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 1fr 1fr 100px;
-  gap: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-.container div{
-  padding-top: 10px;
-  border: 1px solid black;
-}
-
-#education{
-  text-align: center;
+  padding: 3px;
  
 }
+
+
+
+@media screen and (max-width: 680px){
+  
+    }
+
+
+
 ul{
   list-style: none;
   padding: 10px;
@@ -44,18 +35,7 @@ ul{
 li{
   list-style: none;
 }
-#contact{
-  text-align: center;
-padding-top: 8px;
-padding-bottom: 8px;
-  
-}
-form {
-    display: block;
-    background: white;
-    padding: 8px;
-    border-style: hidden;
-  }
+
   
 
   
@@ -73,7 +53,7 @@ form {
   #hamitems { display: flex; }
   #hamitems a {
     padding: 10px;
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
     text-align: center;
   }
@@ -101,7 +81,7 @@ form {
     /* (B) SHOW HAMBURGER ICON */
     #hamnav label { 
       display: inline-block; 
-      color: white;
+      color: whitesmoke;
       background: rgb(144, 175, 233);
       font-style: normal;
       font-size: 1.2em;
@@ -112,4 +92,42 @@ form {
     #hamitems { display: none; }
     #hamnav input:checked ~ #hamitems { display: block; }
   }
-
+  #about{
+    background-color: #C0C0C0;
+  }
+  #contact{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    padding: 1em;
+    font-size: large;
+    letter-spacing: 1px;
+   border: 3px solid rgba(0, 0, 0, 0.425);
+   background-color: #C0C0C0;
+   
+    
+  }
+  
+ 
+#footer{
+  padding: 1em ; 
+  width: 100%;
+  margin: auto;   
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: center;
+  font-size: large;
+  letter-spacing: 2px;
+  background-color: rgb(144, 175, 233);
+  
+}
+#footer li{
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  
+}
+#footer a{
+  color: whitesmoke;
+}
