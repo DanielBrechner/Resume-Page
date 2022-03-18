@@ -17,15 +17,7 @@ section {
   text-align: center;
   background-color: gainsboro;
   padding: 3px;
- 
 }
-
-
-
-@media screen and (max-width: 680px){
-  
-    }
-
 
 
 ul{
@@ -36,20 +28,12 @@ li{
   list-style: none;
 }
 
-  
-
-  
-
-/* [ON BIG SCREEN] */
-/* (A) WRAPPER */
 #hamnav {
     width: 100%;
     background: rgb(144, 175, 233);
     padding: 8px;
-    
   }
   
-  /* (B) HORIZONTAL MENU ITEMS */
   #hamitems { display: flex; }
   #hamitems a {
     padding: 10px;
@@ -57,44 +41,22 @@ li{
     text-decoration: none;
     text-align: center;
   }
+
   #hamitems a:hover { background: #b5bdc7; }
   
-  /* (C) HIDE HAMBURGER */
+  
   #hamnav label, #hamburger { display: none; }
 
   img{
    padding: 8px;
     height: 100px;
-    
   }
 
-  /* Media Queries */
-@media screen and (max-width: 768px){
-    /* (A) BREAK INTO VERTICAL MENU */
-    #hamitems a {
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-      border-top: 1px solid #333;
-    }
-   
-    /* (B) SHOW HAMBURGER ICON */
-    #hamnav label { 
-      display: inline-block; 
-      color: whitesmoke;
-      background: rgb(144, 175, 233);
-      font-style: normal;
-      font-size: 1.2em;
-      padding: 10px;
-    }
-  
-    /* (C) TOGGLE SHOW/HIDE MENU */
-    #hamitems { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; }
-  }
   #about{
     background-color: #C0C0C0;
+    display: flex;
   }
+
   #contact{
     display: flex;
     justify-content:center;
@@ -104,8 +66,6 @@ li{
     letter-spacing: 1px;
    border: 3px solid rgba(0, 0, 0, 0.425);
    background-color: #C0C0C0;
-   
-    
   }
   
  
@@ -120,14 +80,48 @@ li{
   font-size: large;
   letter-spacing: 2px;
   background-color: rgb(144, 175, 233);
-  
 }
+
 #footer li{
   display: flex;
   justify-content: center;
   color: whitesmoke;
-  
 }
 #footer a{
   color: whitesmoke;
 }
+
+@media screen and (max-width: 768px){
+  
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+   
+    #hamnav label { 
+      display: inline-block; 
+      color: whitesmoke;
+      background: rgb(144, 175, 233);
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+
+  
+  @media screen and (min-width: 769px){
+    .flex-container{
+    display: flex;
+    }
+    .flex-child{
+      flex: 1;
+      
+    }
+
+    
+  }

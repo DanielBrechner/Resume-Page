@@ -29,87 +29,90 @@
 
         <!-- About Me-->
         <main class="content">
-            <section id="about">
-                <h1>Daniel Brechner</h1>
-                <img src="DB.jpg" alt="Daniel Brechner">
-                <h2>About Me</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sunt tempora obcaecati
-                    mollitia
-                    et quaerat ducimus quos sequi culpa inventore!
-                </p>
-            </section>
+            <div class="flex-container">
+                <section id="about">
+                    <div class="flex-child ">
+                        <h1>Daniel Brechner</h1>
+                        <img src="DB.jpg" alt="Daniel Brechner">
+                        <h2>About Me</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sunt tempora obcaecati
+                            mollitia
+                            et quaerat ducimus quos sequi culpa inventore!
+                        </p>
+                    </div>
+                </section>
 
-            <!-- Education-->
-            <section id="education">
-                <div>
-                    <h2>Education</h2>
-                    <button onclick="btn()">Skills</button><br>
-                    <div id="skills">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>GIT</li>
-                            <li>GitHub</li>
-                            <li>Wordpress</li>
-                        </ul>
-                    </div>
-                    <br>
+                <!-- Education-->
+                <section id="education">
+                    <div class="flex-child ">
+                        <h2>Education</h2>
+                        <button onclick="btn()">Skills</button><br>
+                        <div id="skills">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>GIT</li>
+                                <li>GitHub</li>
+                                <li>Wordpress</li>
+                            </ul>
+                        </div>
+                        <br>
 
-                    <button onclick="btn2()">School</button>
-                    <div id="school">
-                        <ul>
-                            <li>Code Louisville | Front-End Web Development Certificate of Completion (pending) 2022
-                            </li>
-                            <li>Univerity of Louisville | B.S. Geography/Geosciences 2011</li>
-                            <li>Jefferson Community and Technical College | A.S. 2008</li>
-                        </ul>
+                        <button onclick="btn2()">School</button>
+                        <div id="school">
+                            <ul>
+                                <li>Code Louisville | Front-End Web Development Certificate of Completion (pending) 2022
+                                </li>
+                                <li>Univerity of Louisville | B.S. Geography/Geosciences 2011</li>
+                                <li>Jefferson Community and Technical College | A.S. 2008</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+        </main>
+    </div>
 
+    <!-- Contact Me-->
+    <section id="contact">
 
-            <!-- Contact Me-->
-            <section id="contact">
-
-                <form id="contactForm">
-                    <h2>Contact me</h2>
-                    <div id="formInfo"></div>
-                    <div>
-                        <label for="fullName">Full Name</label>
-                    </div>
-                    <div>
-                        <input id="fullName" type="text" />
-                    </div>
-                    <div>
-                        <label for="email">E-mail</label>
-                    </div>
-                    <div>
-                        <input id="email" type="email" />
-                    </div>
-                    <div>
-                        <label for="subject">Subject</label>
-                    </div>
-                    <div>
-                        <select id="subject">
-                            <option>Job Offer</option>
-                            <option>Personal Message</option>
-                            <option>Complaint</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="msg">Message</label>
-                    </div>
-                    <div>
-                        <textarea for="msg" rows="4"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Send Mail">
-                    </div>
-                </form>
-
-            </section>
+        <form id="contactForm">
+            <h2>Contact me</h2>
+            <div id="formInfo"></div>
+            <div>
+                <label for="fullName">Full Name</label>
+            </div>
+            <div>
+                <input id="fullName" type="text" />
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+            </div>
+            <div>
+                <input id="email" type="email" />
+            </div>
+            <div>
+                <label for="subject">Subject</label>
+            </div>
+            <div>
+                <select id="subject">
+                    <option>Job Offer</option>
+                    <option>Personal Message</option>
+                    <option>Complaint</option>
+                </select>
+            </div>
+            <div>
+                <label for="msg">Message</label>
+            </div>
+            <div>
+                <textarea for="msg" rows="4"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Send Mail">
+            </div>
+        </form>
+    </section>
 
     </div>
     </main>
