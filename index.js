@@ -20,10 +20,10 @@ function btn2() {
 //Conatct Form Validation
 
 function validateForm() {
-    let nameValue = document.forms["contactform"]["fullname"].value;
-    if (nameValue == "") {
+    let x = document.forms["contactform"]["fullname"].value;
+    if (x == "") {
         alert("You must enter your full name");
         return false;
     }
-    document.write("Thank you for contacting me!");
+    document.write("Thank you for contacting me! Expect a response soon.");
 }

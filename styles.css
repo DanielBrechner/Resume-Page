@@ -2,17 +2,19 @@
 html, body {
   height: 100%;
 }
+
 body{
     background-color: gainsboro;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 8x;
     
 }
+
 h1{
   letter-spacing: 2px;
-  font-weight: bold;
-  
+  font-weight: bold; 
 }
+
 section {
   text-align: center;
   background-color: gainsboro;
@@ -57,18 +59,28 @@ li{
     display: flex;
   }
 
-  #contact{
+#contact{
     display: flex;
     justify-content:center;
     width: 100%;
     padding: 1em;
-    font-size: large;
-    letter-spacing: 1px;
-   border: 3px solid rgba(0, 0, 0, 0.425);
-   background-color: #C0C0C0;
+    border: 3px solid rgba(0, 0, 0, 0.425);
+    background-color: whitesmoke;
   }
   
+  .contactname, .contactwhy .contactmessage{
+    padding: 10px;
+    font-weight: bold;
+  
+  }
+
+.prompt{
+ font-weight: bold;
+ padding: 10px;
  
+}
+
+
 #footer{
   padding: 1em ; 
   width: 100%;
