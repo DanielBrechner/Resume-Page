@@ -12,3 +12,5 @@ The two JavaScript features I used are;
 
 1.)Create a form (such as a ‘Contact Us’ form), validate at least one field and then use that information on your page somehow.
 2.)Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction 
+
+*I added a bonus feature - a Website counter - where I retrieved visitor count using LocalStorage.getItem(). Which will store visit value data beyond a single session.
