@@ -62,6 +62,9 @@ a{
     background-color: #C0C0C0;
     display: flex;
   }
+  #experience{
+    background-color: #C0C0C0;
+  }
 
 #contact{
     display: flex;
@@ -111,30 +114,31 @@ a{
   justify-content: center;
 }
 
-@media screen and (max-width: 768px){
   
-    #hamitems a {
+#hamitems a {
       box-sizing: border-box;
       display: block;
       width: 100%;
       border-top: 1px solid #333;
     }
    
-    #hamnav label { 
+#hamnav label { 
       display: inline-block; 
       color: whitesmoke;
       background: rgb(144, 175, 233);
       font-style: normal;
       font-size: 1.2em;
       padding: 10px;
+      
     }
   
     #hamitems { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; }
-  }
 
-  
-  @media screen and (min-width: 769px){
+  @media screen and (min-width: 768px){
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+   
+    
     .flex-container{
     display: flex;
     }
@@ -144,4 +148,11 @@ a{
     }
 
     
+  }
+  @media screen and (min-width: 1024px){
+  #education{
+   
+
+    
+  }
   }
