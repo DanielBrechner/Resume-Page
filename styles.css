@@ -114,41 +114,81 @@ a{
   justify-content: center;
 }
 
-  
 #hamitems a {
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-      border-top: 1px solid #333;
-    }
-   
-#hamnav label { 
-      display: inline-block; 
-      color: whitesmoke;
-      background: rgb(144, 175, 233);
-      font-style: normal;
-      font-size: 1.2em;
-      padding: 10px;
-      
-    }
-  
-    #hamitems { display: none; }
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #333;
+}
 
-  @media screen and (min-width: 768px){
-    #hamitems { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; }
-   
+#hamnav label { 
+  display: inline-block; 
+  color: whitesmoke;
+  background: rgb(144, 175, 233);
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px;
+  
+}
+#hamitems { display: none; }
+#hamnav input:checked ~ #hamitems { display: block; }
+
+
+/* Media Queries*/
     
-    .flex-container{
+@media screen and (min-width: 768px){
+   
+  
+#hamitems{
+  display: block;
+}
+
+#hamnav label{
+  display: none;
+}
+
+ p{
+   font-size: 1.25rem;
+ }
+li{
+  font-size: 1.25rem;
+}
+.flex-container{
     display: flex;
     }
-    .flex-child{
+.flex-child{
       flex: 1;
-      
     }
-
     
-  }
+#contact{
+      font-size: 1.25rem;
+    }
+img{
+  height: 150px;
+}
+}
   @media screen and (min-width: 1024px){
-  
+    p{
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+    h1{
+      font-size: 3rem;
+    }
+    h2{
+      font-size: 2rem;
+    }
+    h3{
+      font-size: 1.75rem;
+    }
+   li{
+     font-size: 1.5rem;
+   }
+img{
+  height: 200px;
+}
+#contact{
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
   }
