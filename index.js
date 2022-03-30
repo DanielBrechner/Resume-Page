@@ -20,13 +20,16 @@ function btn2() {
 //Conatct Form Validation
 
 function validateForm() {
-    let x = document.forms["contactform"]["fullname"].value;
+    let x = document.getElementById("fname").value;
     if (x == "") {
-        alert("You must enter your full name");
-        return false;
+        document.getElementById("form-message").innerHTML = "You must enter your full name";
     }
-    document.write("Thank you for contacting me! Expect a response soon.");
+    else {
+        document.getElementById("form-message").innerHTML = "Thank you for contacting me! Expect a response soon."
+    }
 }
+
+
 
 //Website visit counter
 

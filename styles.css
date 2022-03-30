@@ -26,6 +26,7 @@ ul{
   list-style: none;
   padding: 10px;
 }
+
 li{
   list-style: none;
 }
@@ -80,7 +81,9 @@ a{
     font-weight: bold;
   
   }
-
+  #form-message{
+    color: red;
+  }
 .prompt{
  font-weight: bold;
  padding: 10px;
@@ -137,8 +140,15 @@ a{
 /* Media Queries*/
     
 @media screen and (min-width: 768px){
-   
-  
+ .word-columns{
+   display: flex;
+   flex-direction: row;
+ }  
+  .word-columns p{
+    width: 50%;
+    margin: 5px;
+  }
+
 #hamitems{
   display: block;
 }
@@ -147,45 +157,59 @@ a{
   display: none;
 }
 
- p{
-   font-size: 1.25rem;
- }
-li{
-  font-size: 1.25rem;
-}
 .flex-container{
-    display: flex;
-    }
+  display: flex;
+  flex-direction: column;
+  }
 .flex-child{
-      flex: 1;
+    flex: 1;
+  }
+   
+p{
+      font-size: 1.25rem;
     }
-    
+li{
+     font-size: 1.25rem;
+   }
 #contact{
       font-size: 1.25rem;
     }
 img{
   height: 150px;
 }
+
+
+@media screen and (min-width: 1024px){
+#hamitems {
+  display: flex;
+  flex-direction: row;
 }
-  @media screen and (min-width: 1024px){
-    .flex-container{
+.word-columns {
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.flex-container{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+     
     }
-    p{
+
+p{
       font-size: 1.5rem;
       line-height: 1.5;
     }
-    h1{
+h1{
       font-size: 3rem;
     }
-    h2{
+h2{
       font-size: 2rem;
     }
-    h3{
+h3{
       font-size: 1.75rem;
     }
-   li{
+li{
      font-size: 1.5rem;
    }
 img{
@@ -195,4 +219,3 @@ img{
   font-size: 1.5rem;
   line-height: 1.5;
 }
-  }

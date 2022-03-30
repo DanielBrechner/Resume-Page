@@ -36,18 +36,22 @@
                         <h1>Daniel Brechner</h1>
                         <img src="DB.jpg" alt="Daniel Brechner">
                         <h2>About Me</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sunt tempora obcaecati
-                            mollitia
-                            et quaerat ducimus quos sequi culpa inventore.
-                        </p>
-                        <br>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque voluptates,
-                            repellendus maiores dolores ad quae deserunt aliquid in nostrum consequatur placeat voluptas
-                            praesentium suscipit? Esse minus beatae praesentium deleniti, quaerat adipisci a fugit
-                            veritatis!
-                        </p>
+                        <div class="word-columns">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sunt tempora
+                                obcaecati
+                                mollitia
+                                et quaerat ducimus quos sequi culpa inventore.
+                            </p>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque voluptates,
+                                repellendus maiores dolores ad quae deserunt aliquid in nostrum consequatur placeat
+                                voluptas
+                                praesentium suscipit? Esse minus beatae praesentium deleniti, quaerat adipisci a fugit
+                                veritatis!
+                            </p>
+                        </div>
                     </div>
                 </section>
 
@@ -98,9 +102,10 @@
 
             <!-- Contact Me-->
             <section id="contact">
-                <form id="contactme" name="contactform" onsubmit="validateForm()" method="post">
+                <form id="contactme" name="contactform">
 
                     <h2>Contact Me</h2>
+                    <div id="form-message"></div>
                     <div class="contactname">
                         <label class="prompt" for="fname">Full Name</label><br>
                         <input type="text" id="fname" name="fullname" placeholder="Your full name"><br>
@@ -122,7 +127,7 @@
                         <textarea id="message" name="message" placeholder="Type here..."></textarea><br>
 
                     </div>
-                    <input type="submit" value="Submit">
+                    <button type="button" onclick="validateForm()">Submit</button>
                 </form>
             </section>
 
